@@ -1,0 +1,24 @@
+:root {
+    --blue-color: #2bace1;
+    --purple-color: #d3187c;
+    --light-grey-color: #e0e0e0;
+    --second-grey-color: #ECECEC;
+    --light-green-color: #78b587;
+    --black-color: #000;
+    --white-color: #fff;
+    --transition: 0.3s;
+}
+
+
+/* Start Now Showing Section */
+#nowShowing .sort-wrapper .filter-by-selection {
+    cursor: pointer;
+}
+
+#nowShowing .movie-name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* End Now Showing Section */

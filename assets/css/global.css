@@ -1,0 +1,133 @@
+:root {
+    --blue-color: #2bace1;
+    --purple-color: #d3187c;
+    --light-grey-color: #e0e0e0;
+    --secondary-grey-color: #ccc;
+    --second-grey-color: #ECECEC;
+    --light-green-color: #78b587;
+    --black-color: #000;
+    --white-color: #fff;
+    --transition: 0.3s;
+}
+
+* {
+    list-style: none;
+    text-decoration: none !important;
+    position: relative;
+}
+
+a {
+    color: var(--black-color);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+a:hover {
+    color: var(--black-color);
+    text-decoration: underline !important;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.dashed {
+    border-bottom: 1px dashed var(--second-grey-color);
+}
+
+.main-button {
+    background-color: var(--purple-color);
+    color: var(--white-color);
+}
+
+.main-heading {
+    position: relative;
+    width: fit-content;
+}
+
+.main-heading::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35%;
+    height: 3px;
+    background-color: var(--blue-color);
+    border-radius: 10px;
+}
+
+/* Start Header  Section*/
+#header {
+    position: relative;
+    min-height: 128px;
+    background: url(../images/header/header-background-2940x70@2x.png) top center no-repeat;
+    background-size: 2940px 70px;
+}
+
+#header .container {
+    padding-top: 75px;
+    width: 100%;
+}
+
+#header .search-bar {
+    border: 3px solid var(--blue-color) !important;
+}
+
+#header .search-input {
+    outline: none;
+    caret-color: var(--blue-color);
+}
+
+#header .empty-icon {
+    cursor: pointer;
+}
+
+#header .search-bar .fa-magnifying-glass {
+    color: var(--blue-color);
+}
+
+#header .navbar-brand .logo {
+    width: 125px;
+    height: 40px;
+}
+
+#header .icon-account {
+    width: 24px;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+}
+
+#header .search-icon {
+    color: var(--blue-color);
+    cursor: pointer;
+}
+
+/* Media Query */
+@media (max-width: 400px) {
+    #header .navbar-brand .logo {
+        width: 90px;
+    }
+}
+
+/* End Header Section*/
+
+/* Start Footer Section */
+#footer {
+    background-color: var(--second-grey-color);
+}
+
+#footer .footer-wrapper .brand-vox img {
+    width: 125px;
+    height: 40px;
+}
+
+#footer .footer-wrapper .icons-links a {
+    width: 40px;
+    aspect-ratio: 1/1;
+    background-color: black;
+}
+
+/* End Footer Section */

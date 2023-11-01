@@ -1,0 +1,18 @@
+:root {
+    --blue-color: #2bace1;
+    --purple-color: #d3187c;
+    --light-grey-color: #e0e0e0;
+    --second-grey-color: #ECECEC;
+    --light-green-color: #78b587;
+    --black-color: #000;
+    --white-color: #fff;
+    --transition: 0.3s;
+}
+
+
+/* Start Hero Section */
+#hero .carousel-inner {
+    max-height: 600px;
+}
+
+/* End Hero Section */
