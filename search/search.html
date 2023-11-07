@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vox</title>
+    <!-- font Awesome -->
+    <link
+      rel="stylesheet"
+      href="../assets/libraries/font awesome/css/all.min.css"
+    />
+    <!-- Bootstrap file -->
+    <link rel="stylesheet" href="../assets/libraries/bootstap/bootstrap.css" />
+    <!-- Main File Of Css -->
+    <link rel="stylesheet" href="../assets/css/search.css" />
+    <link rel="stylesheet" href="../assets/css/global.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div class="container z-3 pb-2">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid flex-row-reverse flex-lg-row">
+            <div
+              class="account-and-search d-flex align-items-center gap-1 d-block d-lg-none"
+            >
+              <a class="navbar-brand me-1" href="#"
+                ><img
+                  class="icon-account"
+                  src="../assets/images/header/icon-account-32x32@2x.png"
+                  alt=""
+              /></a>
+              <i
+                class="search-icon fa-solid fa-magnifying-glass fs-4 mt-2 me-auto"
+              ></i>
+            </div>
+
+            <a class="navbar-brand" href="/"
+              ><img
+                class="logo"
+                src="../assets/images/header/logo-288x92.png"
+                alt=""
+            /></a>
+            <button
+              class="navbar-toggler border-0"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="home nav-link" aria-current="page" href="/">HOME</a>
+                </li>
+
+                <li class="movies nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    MOVIES
+                  </a>
+                  <ul
+                    class="dropdown-menu border-0"
+                    aria-labelledby="navbarDropdown"
+                  >
+                    <li>
+                      <a class="dropdown-item" href="../movies/movies.html"
+                        >What's on</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Coming Soon</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="food-drinks nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle active"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    FOOD & DRINKS
+                  </a>
+                  <ul
+                    class="dropdown-menu border-0"
+                    aria-labelledby="navbarDropdown"
+                  >
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="../foodsanddrinks/order.html"
+                        >Pre-order online</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Vox Exclusives</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="ways-to-watch nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    WAYS TO WATCH
+                  </a>
+                  <ul
+                    class="dropdown-menu border-0"
+                    aria-labelledby="navbarDropdown"
+                  >
+                    <li>
+                      <a class="dropdown-item" href="#">Sensory Friendly</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">IMax</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Max</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Gold</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">4DX</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Kids</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+
+              <div class="search d-none d-lg-block">
+                <i
+                  class="search-icon fa-solid fa-magnifying-glass fs-4 mt-2"
+                ></i>
+              </div>
+
+              <a class="navbar-brand d-none d-lg-block ms-3" href="#"
+                ><img
+                  class="icon-account"
+                  src="../assets/images/header/icon-account-32x32@2x.png"
+                  alt=""
+              /></a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="searchSide" class="w-50">
+        <div class="bg-light">
+          <div class="container p-2">
+            <form class="search-bar d-flex p-2 gap-2 hidden">
+              <i class="fa-solid fa-magnifying-glass fs-4"></i>
+              <input class="search-input border-0 w-100" type="text" />
+              <i class="empty-icon fa-solid fa-xmark fs-4 text-secondary"></i>
+              <button
+                class="search-submit border-0 rounded btn-md text-white"
+                type="submit"
+              >
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="search-wrapper-results container p-2">
+          <!-- <a href="" class="d-flex gap-2">
+            <div class="image">
+              <img
+                class="w-100"
+                src="../assets/images/movies/Voy Voy.jpg"
+                alt=""
+              />
+            </div>
+            <div class="movie-info">
+              <p class="movie-name">Maysar Mohamed</p>
+              <span>(Arabic)</span>
+            </div>
+          </a> -->
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <div class="container py-5">
+        <div class="footer-wrapper row">
+          <article
+            class="d-flex flex-column justify-content-start flex-sm-row justify-content-sm-between flex-md-column justify-content-md-start col-12 col-md-3 mb-4"
+          >
+            <a class="brand-vox" href="/" title="VOX Cinemas"
+              ><img
+                class="mb-4"
+                src="../assets/images/header/logo-288x92.png"
+                alt=""
+            /></a>
+            <div
+              class="follow-us d-flex flex-column flex-sm-row flex-md-column align-items-start align-items-sm-center align-items-md-start gap-2"
+            >
+              <h5>STAY IN TOUCH</h5>
+              <ul
+                class="icons-links ps-0 mb-0 d-flex flex-wrap align-items-center gap-1 fs-3"
+              >
+                <li class="mb-2">
+                  <a
+                    class="d-flex align-items-center justify-content-center rounded-circle"
+                    href=""
+                    ><i class="fa-brands fa-facebook-f text-white"></i
+                  ></a>
+                </li>
+                <li class="mb-2">
+                  <a
+                    class="d-flex align-items-center justify-content-center rounded-circle"
+                    href=""
+                    ><i class="fa-brands fa-twitter text-white"></i
+                  ></a>
+                </li>
+                <li class="mb-2">
+                  <a
+                    class="d-flex align-items-center justify-content-center rounded-circle"
+                    href=""
+                    ><i class="fa-brands fa-instagram text-white"></i
+                  ></a>
+                </li>
+                <li class="mb-2">
+                  <a
+                    class="d-flex align-items-center justify-content-center rounded-circle"
+                    href=""
+                    ><i class="fa-brands fa-youtube text-white"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <div class="col-3 d-none d-md-block">
+            <h5>About</h5>
+            <nav>
+              <ul class="ps-0">
+                <li class="mb-2"><a href="">About Us</a></li>
+                <li class="mb-2"><a href="">FAQ</a></li>
+                <li class="mb-2"><a href="">Contact Us</a></li>
+                <li class="mb-2"><a href="">Careers</a></li>
+                <li class="mb-2"><a href="">Vox Cinemas App</a></li>
+                <li class="mb-2">
+                  <a href="">Responsible Disclosure Policy</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="col-3 d-none d-md-block">
+            <h5>Help & Support</h5>
+            <nav>
+              <ul class="ps-0">
+                <li class="mb-2"><a href="">Refunds</a></li>
+                <li class="mb-2"><a href="">Privacy Policy</a></li>
+                <li class="mb-2"><a href="">Terms And Conditions</a></li>
+                <li class="mb-2"><a href="">Terms of Use</a></li>
+                <li class="mb-2"><a href="">Health & Safety</a></li>
+                <li class="mb-2"><a href="">Cookie Settings</a></li>
+                <li class="mb-2"><a href="">Privacy Center</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="col-3 d-none d-md-block">
+            <h5>Explore Our Site</h5>
+            <nav>
+              <ul class="ps-0">
+                <li class="mb-2"><a href="">What's On</a></li>
+                <li class="mb-2"><a href="">Coming Soon</a></li>
+                <li class="mb-2"><a href="">Food Menus</a></li>
+                <li class="mb-2"><a href="">Pre-Order Online</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="accordion d-block d-md-none" id="accordionExample">
+            <div class="accordion-item border border-0 bg-transparent">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button bg-transparent"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  About
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <ul class="ps-0">
+                    <li class="mb-2"><a href="">About Us</a></li>
+                    <li class="mb-2"><a href="">FAQ</a></li>
+                    <li class="mb-2"><a href="">Contact Us</a></li>
+                    <li class="mb-2"><a href="">Careers</a></li>
+                    <li class="mb-2"><a href="">Vox Cinemas App</a></li>
+                    <li class="mb-2">
+                      <a href="">Responsible Disclosure Policy</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item border border-0 bg-transparent">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed bg-transparent"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Help & Support
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <ul class="ps-0">
+                    <li class="mb-2"><a href="">Refunds</a></li>
+                    <li class="mb-2"><a href="">Privacy Policy</a></li>
+                    <li class="mb-2"><a href="">Terms And Conditions</a></li>
+                    <li class="mb-2"><a href="">Terms of Use</a></li>
+                    <li class="mb-2"><a href="">Health & Safety</a></li>
+                    <li class="mb-2"><a href="">Cookie Settings</a></li>
+                    <li class="mb-2"><a href="">Privacy Center</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item border border-0 bg-transparent">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed bg-transparent"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Explore Our Site
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <ul class="ps-0">
+                    <li class="mb-2"><a href="">What's On</a></li>
+                    <li class="mb-2"><a href="">Coming Soon</a></li>
+                    <li class="mb-2"><a href="">Food Menus</a></li>
+                    <li class="mb-2"><a href="">Pre-Order Online</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../assets/libraries/bootstap/bootstrap.js"></script>
+    <script src="../assets/scripts/global.js" type="module"></script>
+    <script src="../assets/scripts/search.js" type="module"></script>
+  </body>
+</html>

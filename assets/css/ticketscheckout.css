@@ -1,0 +1,182 @@
+:root {
+    --blue-color: #2bace1;
+    --secondary-blue-color: #0d6efd;
+    --purple-color: #d3187c;
+    --dark-purple-color: #750f46;
+    --light-grey-color: #e0e0e0;
+    --secondary-grey-color: #ccc;
+    --second-grey-color: #ECECEC;
+    --light-green-color: #78b587;
+    --dark-grey-color: #a59f9f;
+    --moov-color: #565ABB;
+    --light-moov-color: #6268C6;
+    --black-color: #000;
+    --white-color: #fff;
+    --transition: 0.3s;
+}
+
+* {
+    list-style: none;
+    text-decoration: none !important;
+    position: relative;
+}
+
+/* Start MyBasket Section */
+#myTickets .signIn,
+#myTickets .signUp {
+    color: var(--blue-color) !important;
+}
+
+#myTickets .menu-list li {
+    cursor: pointer;
+}
+
+#myTickets .menu-list .active {
+    color: var(--blue-color) !important;
+}
+
+#myTickets a {
+    text-decoration: none !important;
+}
+
+/* End MyBasket Section */
+
+/* Start Shopping Basket Section */
+
+.basket-wrapper {
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.basket-wrapper .head {
+    border-bottom: 2px solid var(--light-grey-color);
+    text-decoration: none !important;
+}
+
+.basket-wrapper .head:hover {
+    color: var(--blue-color) !important;
+}
+
+.shopping-basket-results .left-box {
+    border-right: 2px dashed black !important;
+}
+
+.shopping-basket-results .right-box {
+    border-left: 2px dashed black !important;
+    background-color: var(--secondary-blue-color);
+    color: var(--white-color);
+}
+
+.shopping-basket-results .order-col {
+    border-radius: 14px !important;
+    -webkit-border-radius: 14px !important;
+    -moz-border-radius: 14px !important;
+    -ms-border-radius: 14px !important;
+    -o-border-radius: 14px !important;
+}
+
+.shopping-basket-results .order-col .box {
+    flex: 1;
+}
+
+.shopping-basket-results .order-col .image img {
+    width: fit-content;
+    height: 26px;
+}
+
+.shopping-basket-results .order-col .image .barcode {
+    height: 150px;
+}
+
+.shopping-basket-results .order-col .movie-date,
+.shopping-basket-results .order-col .movie-time {
+    font-size: 14px;
+}
+
+.shopping-basket-results .order-col .remove {
+    cursor: pointer;
+}
+
+/* End Shopping Basket Section */
+
+/* Start Card Section */
+
+.card {
+    background-color: var(--moov-color);
+    width: 388px !important;
+    max-height: 600px !important;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    height: fit-content;
+}
+
+.card .image {
+    min-width: 50px;
+}
+
+.card input {
+    background-color: var(--light-moov-color);
+    outline: none;
+    caret-color: white;
+    color: var(--white-color);
+}
+
+.card input::placeholder {
+    color: var(--secondary-grey-color);
+}
+
+.card .input-parent .fa-circle-check,
+.fa-circle-xmark {
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: -1px;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 50%;
+}
+
+.fa-circle-check {
+    color: green;
+}
+
+.fa-circle-xmark {
+    color: red;
+}
+
+.active-mark {
+    display: block !important;
+}
+
+.card .input-parent span {
+    display: block;
+    width: 100%;
+    height: 15px;
+    color: #f55f5f;
+    font-style: italic;
+    font-size: 12px;
+}
+
+.card button {
+    background-color: var(--purple-color);
+    color: white;
+}
+
+/* End Card Section */
+
+/* Start Success Alert Section */
+#successAlert .success-alert {
+    width: fit-content !important;
+    z-index: 99999;
+    position: fixed;
+    top: 58px;
+    right: 0px;
+}
+
+/* End Success Alert Section */

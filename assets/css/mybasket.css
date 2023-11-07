@@ -1,0 +1,165 @@
+:root {
+    --blue-color: #2bace1;
+    --purple-color: #d3187c;
+    --dark-purple-color: #750f46;
+    --light-grey-color: #e0e0e0;
+    --secondary-grey-color: #ccc;
+    --second-grey-color: #ECECEC;
+    --light-green-color: #78b587;
+    --dark-grey-color: #a59f9f;
+    --moov-color: #565ABB;
+    --light-moov-color: #6268C6;
+    --black-color: #000;
+    --white-color: #fff;
+    --transition: 0.3s;
+}
+
+* {
+    list-style: none;
+    text-decoration: none !important;
+    position: relative;
+}
+
+/* Start MyBasket Section */
+#myBasket .signIn,
+#myBasket .signUp {
+    color: var(--blue-color) !important;
+}
+
+#myBasket .menu-list li {
+    cursor: pointer;
+}
+
+#myBasket .menu-list .active {
+    color: var(--blue-color) !important;
+}
+
+#myBasket a {
+    text-decoration: none !important;
+}
+
+/* End MyBasket Section */
+
+/* Start Shopping Basket Section */
+
+.basket-wrapper {
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.basket-wrapper .head {
+    border-bottom: 2px solid var(--light-grey-color);
+    text-decoration: none !important;
+}
+
+.basket-wrapper .head:hover {
+    color: var(--blue-color) !important;
+}
+
+.shopping-basket-results .order-row {
+    box-shadow: 0 3px 7px 0 rgba(0, 0, 0, .13), 0 1px 2px 0 rgba(0, 0, 0, .11);
+
+}
+
+.shopping-basket-results .order-row .box {
+    flex: 1;
+}
+
+.shopping-basket-results .order-row .image img {
+    width: 80px;
+    height: 83px;
+}
+
+.shopping-basket-results .order-row .fa-caret-up,
+.shopping-basket-results .order-row .fa-caret-down {
+    height: 13px;
+    cursor: pointer;
+}
+
+.shopping-basket-results .order-row .remove {
+    cursor: pointer;
+}
+
+/* End Shopping Basket Section */
+
+/* Start Card Section */
+
+.card {
+    background-color: var(--moov-color);
+    width: 388px !important;
+    max-height: 600px !important;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    height: fit-content;
+}
+
+.card .image {
+    min-width: 50px;
+}
+
+.card input {
+    background-color: var(--light-moov-color);
+    outline: none;
+    caret-color: white;
+    color: var(--white-color);
+}
+
+.card input::placeholder {
+    color: var(--secondary-grey-color);
+}
+
+.card .input-parent .fa-circle-check,
+.fa-circle-xmark {
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: -1px;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 50%;
+}
+
+.fa-circle-check {
+    color: green;
+}
+
+.fa-circle-xmark {
+    color: red;
+}
+
+.active-mark {
+    display: block !important;
+}
+
+.card .input-parent span {
+    display: block;
+    width: 100%;
+    height: 15px;
+    color: #f55f5f;
+    font-style: italic;
+    font-size: 12px;
+}
+
+.card button {
+    background-color: var(--purple-color);
+    color: white;
+}
+
+/* End Card Section */
+
+/* Start Success Alert Section */
+#successAlert .success-alert {
+    width: fit-content !important;
+    z-index: 99999;
+    position: fixed;
+    top: 58px;
+    right: 0px;
+}
+
+/* End Success Alert Section */

@@ -1,13 +1,40 @@
 import { getFilterMoviesByIdWithApi, getLimitedMoviesAndExcludeOneByApi } from "./api.js";
+import { addActiveClass, removeActiveClass } from "./global.js";
+import { addToLocalStorage, getFromLocalStorage } from "./localstorage.js";
 
 const movieWrapper = document.querySelector(".movie-wrapper");
-let sliderContainer = document.querySelector("#moviesYouMightLike .slider-container");
+const sliderContainer = document.querySelector("#moviesYouMightLike .slider-container");
+const dates = document.querySelectorAll("#showTimes .dates-list li");
+
+let movieTimes = document.querySelectorAll(".time");
+let movieArray = [];
 
 function intialApp() {
   getUrlParamOfMovieId();
+  getDatesOfWeek();
+  addEvents();
+  movieArray = getFromLocalStorage("movieReservation");
 }
 
 intialApp();
+
+function addEvents() {
+  dates.forEach((date) => {
+    date.addEventListener("click", function () {
+      removeActiveClass(dates);
+      addActiveClass(this);
+      addDateOnMovieTimes(this.dataset.date)
+    })
+  })
+
+  movieTimes.forEach((time) => {
+    time.addEventListener("click", function () {
+      getMovieInfo(this, this.dataset.name, this.dataset.date, this.dataset.time)
+    })
+  })
+
+
+}
 
 async function getUrlParamOfMovieId() {
   const querystring = window.location.search;
@@ -31,6 +58,7 @@ async function getLimitedMoviesAndExcludeMainMovie(id) {
 
 function displayTheMovie(theMovie) {
   let moviesHtmlContent = theMovie.map((movie) => {
+    addMovieNameOnMovieTimes(movie.name)
     return `      <div
     class="theSingleMovie-head d-flex justify-content-between align-items-center flex-wrap"
   >
@@ -69,11 +97,10 @@ function displayTheMovie(theMovie) {
             </div>
             <button
             type="button"
-            class="view-showtimes main-button border-0 btn-md d-flex mx-auto my-4 py-2 px-3 rounded"
+            class="view-showtimes main-button border-0 btn-md d-flex mx-auto my-4 py-2 px-3 rounded text-white"
+            data-link = "showTimes"
           >
-            <a class="text-white" href="">
-              View Showtimes</a
-            >
+          View Showtimes
           </button>
           <div class="dashed"></div>
           <div class="row py-4">
@@ -106,9 +133,19 @@ function displayTheMovie(theMovie) {
               </article>
             </div>
         `
+
   })
 
-  movieWrapper.innerHTML = moviesHtmlContent.join("")
+  movieWrapper.innerHTML = moviesHtmlContent.join("");
+  ScrollToCategory();
+}
+
+function ScrollToCategory() {
+  const viewShowtimesBtn = document.querySelector(".view-showtimes");
+  viewShowtimesBtn.addEventListener("click", function () {
+    let element = document.getElementById(viewShowtimesBtn.getAttribute("data-link"));
+    element.scrollIntoView({ behavior: "smooth", block: "center" })
+  })
 }
 
 function displayTheSlider(theMovie) {
@@ -131,12 +168,10 @@ function displayTheSlider(theMovie) {
 </div>`
   })
   sliderContainer.innerHTML = moviesSliderContent.join("");
-  sliderScroll()
+  sliderScroll();
 }
 
 // slider function
-
-
 
 function sliderScroll() {
   const arrow = document.querySelectorAll("#moviesYouMightLike i");
@@ -150,6 +185,69 @@ function sliderScroll() {
 
   })
 }
-// sliderScroll()
+
+// Dates Function
+
+function getDatesOfWeek() {
+  let x = 0;
+  for (let i = 0; i < 7; i++) {
+    let date = new Date();
+    date.setDate(date.getDate() + x);
+    date.toDateString();
+    if (i == 0) {
+      dates[i].innerHTML = "Today";
+      dates[i].dataset.date = date.toDateString();
+      addDateOnMovieTimes(date.toDateString());
+    } else if (i == 1) {
+      dates[i].innerHTML = "Tomorrow";
+      dates[i].dataset.date = date.toDateString();
+    } else {
+      dates[i].innerHTML = date.toDateString();
+      dates[i].dataset.date = date.toDateString();
+    }
+    x++;
+  }
+}
+
+function addDateOnMovieTimes(date) {
+  movieTimes.forEach((time) => {
+    time.setAttribute("data-date", date);
+  })
+}
+
+function addMovieNameOnMovieTimes(movie) {
+
+  movieTimes.forEach((time) => {
+    time.setAttribute("data-name", movie);
+  })
+}
+
+function getMovieInfo(link, name, date, time) {
+  let uniqueId = Date.now();
+  let theLink = link;
+  let movieObj = {
+    id: uniqueId,
+    name: name,
+    date: date,
+    time: time,
+    chairs: []
+  }
+  checkTheMovieOnLocalstorage(theLink, movieObj)
+}
+
+function checkTheMovieOnLocalstorage(theLink, movieObject) {
+  let movieFound = movieArray.find((movie) => {
+    return (movie.name == movieObject.name && movie.date == movieObject.date && movie.time == movieObject.time)
+  })
+  if (!movieFound) {
+    movieArray.push(movieObject);
+    addToLocalStorage("movieReservation", movieArray);
+    theLink.href = `../cinema/cinema.html?id=${movieObject.id}`;
+  } else {
+    theLink.href = `../cinema/cinema.html?id=${movieFound.id}`;
+  }
+}
+
+
 
 

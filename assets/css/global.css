@@ -4,6 +4,7 @@
     --light-grey-color: #e0e0e0;
     --secondary-grey-color: #ccc;
     --second-grey-color: #ECECEC;
+    --dashed-grey-color: #726e6e6c;
     --light-green-color: #78b587;
     --black-color: #000;
     --white-color: #fff;
@@ -35,7 +36,7 @@ a:hover {
 }
 
 .dashed {
-    border-bottom: 1px dashed var(--second-grey-color);
+    border-bottom: 1px dashed var(--dashed-grey-color);
 }
 
 .main-button {
@@ -61,7 +62,11 @@ a:hover {
 
 /* Start Header  Section*/
 #header {
-    position: relative;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: white !important;
     min-height: 128px;
     background: url(../images/header/header-background-2940x70@2x.png) top center no-repeat;
     background-size: 2940px 70px;

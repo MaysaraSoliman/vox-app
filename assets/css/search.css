@@ -1,0 +1,135 @@
+:root {
+    --blue-color: #2bace1;
+    --purple-color: #d3187c;
+    --light-grey-color: #e0e0e0;
+    --secondary-grey-color: #ccc;
+    --second-grey-color: #ECECEC;
+    --dashed-grey-color: #726e6e6c;
+    --light-green-color: #78b587;
+    --black-color: #000;
+    --white-color: #fff;
+    --transition: 0.3s;
+    --second-transition: 0.5s;
+}
+
+* {
+    list-style: none;
+    text-decoration: none !important;
+    position: relative;
+}
+
+a {
+    color: var(--black-color);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+a:hover {
+    color: var(--black-color);
+    text-decoration: underline !important;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.dashed {
+    border-bottom: 1px dashed var(--dashed-grey-color);
+}
+
+.main-button {
+    background-color: var(--purple-color);
+    color: var(--white-color);
+}
+
+.main-heading {
+    position: relative;
+    width: fit-content;
+}
+
+.main-heading::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35%;
+    height: 3px;
+    background-color: var(--blue-color);
+    border-radius: 10px;
+}
+
+
+/* Start Search Section */
+#searchSide {
+    overflow: scroll;
+    height: 100%;
+    background-color: white;
+    position: fixed;
+    top: 149px;
+    right: -100%;
+    z-index: 99;
+    transition: var(--second-transition);
+    -webkit-transition: var(--second-transition);
+    -moz-transition: var(--second-transition);
+    -ms-transition: var(--second-transition);
+    -o-transition: var(--second-transition);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4), 0px 7px 13px -3px rgba(0, 0, 0, 0.3), inset 0px -3px 0px rgba(0, 0, 0, 0.2);
+}
+
+.active-transition {
+    right: 0 !important;
+}
+
+#searchSide .search-input {
+    outline: none;
+    caret-color: var(--blue-color);
+}
+
+#searchSide .search-bar {
+    border: 3px solid var(--blue-color);
+    margin: 10px 0;
+    background-color: white;
+}
+
+#searchSide .fa-magnifying-glass {
+    color: var(--blue-color);
+}
+
+#searchSide .empty-icon {
+    cursor: pointer;
+}
+
+#searchSide .search-submit {
+    background-color: var(--blue-color);
+}
+
+#searchSide .search-wrapper-results a {
+    box-shadow: 0 3px 7px 0 rgba(0, 0, 0, .13), 0 1px 2px 0 rgba(0, 0, 0, .11);
+}
+
+#searchSide .search-wrapper-results .image {
+    width: 54px;
+    height: 74px;
+}
+
+#searchSide .search-wrapper-results .movie-name, .movie-genre {
+    color: var(--blue-color);
+}
+
+/* Media Query */
+@media(max-width: 900px) {
+    #searchSide {
+        width: 100% !important;
+    }
+}
+
+@media(min-width: 1200px) {
+    #searchSide {
+        width: 35% !important;
+    }
+}
+
+/* End Search Section */

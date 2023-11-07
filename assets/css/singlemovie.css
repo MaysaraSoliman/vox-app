@@ -1,6 +1,7 @@
 :root {
     --blue-color: #2bace1;
     --purple-color: #d3187c;
+    --dark-purple-color: #750f46;
     --light-grey-color: #e0e0e0;
     --secondary-grey-color: #ccc;
     --second-grey-color: #ECECEC;
@@ -139,7 +140,49 @@
         max-height: 300px;
     }
 
-
 }
 
 /* End Slider Section */
+
+/* Start Showtimes Section */
+#showTimes .dates-list li {
+    cursor: pointer;
+}
+
+#showTimes .dates-list .active {
+    color: var(--blue-color) !important;
+}
+
+#showTimes a {
+    text-decoration: none !important;
+}
+
+#showTimes .time {
+    background-color: var(--purple-color);
+    color: var(--white-color);
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+#showTimes .time::before {
+    content: "";
+    background-color: var(--white-color);
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    display: block;
+    height: 16px;
+    left: -2px;
+    margin-top: -8px;
+    position: absolute;
+    top: 50%;
+    width: 9px;
+}
+
+#showTimes .time:hover {
+    background-color: var(--dark-purple-color);
+}
+
+/* End Showtimes Section */

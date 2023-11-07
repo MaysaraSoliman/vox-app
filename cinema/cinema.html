@@ -1,0 +1,1259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vox</title>
+    <!-- font Awesome -->
+    <link
+      rel="stylesheet"
+      href="../assets/libraries/font awesome/css/all.min.css"
+    />
+    <!-- Bootstrap file -->
+    <link rel="stylesheet" href="../assets/libraries/bootstap/bootstrap.css" />
+    <!-- Main File Of Css -->
+    <link rel="stylesheet" href="../assets/css/cinema.css" />
+    <link rel="stylesheet" href="../assets/css/global.css" />
+    <link rel="stylesheet" href="../assets/css/search.css" />
+    <!-- Html To Image Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <div class="container z-3 pb-2">
+        <!--  <form class="search-bar d-flex p-2 gap-1 hidden">
+          <i class="fa-solid fa-magnifying-glass fs-4"></i>
+          <input class="search-input border-0 w-100" type="text" />
+          <i class="empty-icon fa-solid fa-xmark fs-4 text-secondary"></i>
+           <button
+                  class="search-submit border-0 rounded btn-md text-white"
+                  type="submit"
+                >
+                  Search
+                </button> 
+        </form> -->
+
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid flex-row-reverse flex-lg-row">
+            <div
+              class="account-and-search d-flex align-items-center gap-1 d-block d-lg-none"
+            >
+              <a class="navbar-brand me-1" href="#"
+                ><img
+                  class="icon-account"
+                  src="../assets/images/header/icon-account-32x32@2x.png"
+                  alt=""
+              /></a>
+              <i
+                class="search-icon fa-solid fa-magnifying-glass fs-4 mt-2 me-auto"
+              ></i>
+            </div>
+
+            <a class="navbar-brand" href="/"
+              ><img
+                class="logo"
+                src="../assets/images/header/logo-288x92.png"
+                alt=""
+            /></a>
+            <button
+              class="navbar-toggler border-0"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="home nav-link" aria-current="page" href="/">HOME</a>
+                </li>
+
+                <li class="movies nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle active"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    MOVIES
+                  </a>
+                  <ul
+                    class="dropdown-menu border-0"
+                    aria-labelledby="navbarDropdown"
+                  >
+                    <li>
+                      <a class="dropdown-item" href="../movies/movies.html"
+                        >What's on</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Coming Soon</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="food-drinks nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    FOOD & DRINKS
+                  </a>
+                  <ul
+                    class="dropdown-menu border-0"
+                    aria-labelledby="navbarDropdown"
+                  >
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="../foodsanddrinks/order.html"
+                        >Pre-order online</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Vox Exclusives</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="ways-to-watch nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    WAYS TO WATCH
+                  </a>
+                  <ul
+                    class="dropdown-menu border-0"
+                    aria-labelledby="navbarDropdown"
+                  >
+                    <li>
+                      <a class="dropdown-item" href="#">Sensory Friendly</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">IMax</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Max</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Gold</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">4DX</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Kids</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+
+              <div class="search d-none d-lg-block">
+                <i
+                  class="search-icon fa-solid fa-magnifying-glass fs-4 mt-2"
+                ></i>
+              </div>
+
+              <a class="navbar-brand d-none d-lg-block ms-3" href="#"
+                ><img
+                  class="icon-account"
+                  src="../assets/images/header/icon-account-32x32@2x.png"
+                  alt=""
+              /></a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="searchSide" class="w-50">
+        <div class="bg-light">
+          <div class="container p-2">
+            <form class="search-bar d-flex p-2 gap-2 hidden">
+              <i class="fa-solid fa-magnifying-glass fs-4"></i>
+              <input class="search-input border-0 w-100" type="text" />
+              <i class="empty-icon fa-solid fa-xmark fs-4 text-secondary"></i>
+              <button
+                class="search-submit border-0 rounded btn-md text-white"
+                type="submit"
+              >
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="search-wrapper-results container p-2">
+          <!-- <a href="" class="d-flex gap-2">
+            <div class="image">
+              <img
+                class="w-100"
+                src="../assets/images/movies/Voy Voy.jpg"
+                alt=""
+              />
+            </div>
+            <div class="movie-info">
+              <p class="movie-name">Maysar Mohamed</p>
+              <span>(Arabic)</span>
+            </div>
+          </a> -->
+        </div>
+      </section>
+      <section id="hero">
+        <div class="container py-5">
+          <div class="booking-wrapper row">
+            <div class="booking-row py-2 mb-3 col-12">
+              <h1 class="pt-1">BOOK TICKETS</h1>
+            </div>
+            <div
+              class="booking-row py-2 mb-3 col-12 d-flex align-items-center gap-3"
+            >
+              <div class="icon">
+                <img
+                  class="w-100 h-100"
+                  src="../assets/images/icons/icon-guest-256x256.png"
+                  alt=""
+                />
+              </div>
+              <h2 class="fs-4">VOX MEMBERSHIP</h2>
+            </div>
+            <div class="booking-row py-2 mb-3 col-12">
+              <p>You are currently booking as a guest.</p>
+            </div>
+            <div
+              class="booking-row py-2 mb-3 col-12 d-flex align-items-center gap-3"
+            >
+              <div class="icon">
+                <img
+                  class="w-100 h-100"
+                  src="../assets/images/icons/icon-seats-256x256.png"
+                  alt=""
+                />
+              </div>
+              <h2 class="fs-4">CHOOSE SEATS</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="cinema"
+        class="min-vh-100 d-flex align-items-center justify-content-center"
+      >
+        <div class="container d-flex flex-column gap-3">
+          <!-- <div class="movies-wrapper row">
+              <div
+                class="col-12 d-flex gap-2 align-items-center justify-content-center"
+              >
+                <label for="movie">Pick a movie</label>
+                <select name="movies" id="movie">
+                  <option value="100">A Haunting in Venice</option>
+                  <option value="120">Expendables</option>
+                  <option value="120">Killers of the Flower Moon</option>
+                </select>
+              </div>
+            </div> -->
+          <div class="hall row">
+            <div
+              class="screen-wrapper col-12 d-flex align-items-center justify-content-center"
+            >
+              <div
+                class="screen d-flex align-items-center justify-content-center"
+              >
+                <span class="text-center fs-2">SCREEN</span>
+              </div>
+            </div>
+            <div class="seats-wrapper d-flex flex-column gap-2 mt-5">
+              <ul
+                class="seats-row col-12 d-flex gap-1 align-items-center justify-content-between"
+              >
+                <li class="left-seats d-flex gap-1 me-3">
+                  <div class="seat-parent" data-price="100" data-id="1">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="2">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="3">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="4">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                </li>
+
+                <li class="middle-seats d-flex gap-1">
+                  <div class="seat-parent" data-price="100" data-id="5">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="6">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="7">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="8">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="9">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="10">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="11">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="12">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                </li>
+
+                <li class="right-seats d-flex gap-1 ms-3">
+                  <div class="seat-parent" data-price="100" data-id="13">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="14">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="15">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="16">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                </li>
+              </ul>
+
+              <ul
+                class="seats-row col-12 d-flex gap-1 align-items-center justify-content-between"
+              >
+                <li class="left-seats d-flex gap-1 me-3">
+                  <div class="seat-parent" data-price="100" data-id="17">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="18">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="19">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="20">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                </li>
+
+                <li class="middle-seats d-flex gap-1">
+                  <div class="seat-parent" data-price="100" data-id="21">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="22">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="23">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="24">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="25">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="26">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="27">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="28">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                </li>
+
+                <li class="right-seats d-flex gap-1 ms-3">
+                  <div class="seat-parent" data-price="100" data-id="29">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="30">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="31">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="32">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                </li>
+              </ul>
+
+              <ul
+                class="seats-row col-12 d-flex gap-1 align-items-center justify-content-between"
+              >
+                <li class="left-seats d-flex gap-1 me-3">
+                  <div class="seat-parent" data-price="100" data-id="33">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="34">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="35">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="36">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                </li>
+
+                <li class="middle-seats d-flex gap-1">
+                  <div class="seat-parent" data-price="100" data-id="37">
+                    <div class="seat standard-frame unavaliable-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="38">
+                    <div class="seat standard-frame unavaliable-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="39">
+                    <div class="seat standard-frame unavaliable-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="40">
+                    <div class="seat standard-frame unavaliable-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="41">
+                    <div class="seat standard-frame unavaliable-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="42">
+                    <div class="seat standard-frame unavaliable-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="43">
+                    <div class="seat standard-frame unavaliable-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="44">
+                    <div class="seat standard-frame unavaliable-frame"></div>
+                  </div>
+                </li>
+
+                <li class="right-seats d-flex gap-1 ms-3">
+                  <div class="seat-parent" data-price="100" data-id="45">
+                    <div class="seat standard-frame unavaliable-frame"></div>
+                  </div>
+
+                  <div class="seat-parent" data-price="100" data-id="46">
+                    <div class="seat standard-frame unavaliable-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="47">
+                    <div class="seat standard-frame unavaliable-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="48">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                </li>
+              </ul>
+
+              <ul
+                class="seats-row col-12 d-flex gap-1 align-items-center justify-content-between"
+              >
+                <li class="left-seats d-flex gap-1 me-3">
+                  <div class="seat-parent" data-price="100" data-id="49">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="50">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="51">
+                    <div class="seat standard-frame unavaliable-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="52">
+                    <div class="seat standard-frame unavaliable-frame"></div>
+                  </div>
+                </li>
+
+                <li class="middle-seats d-flex gap-1">
+                  <div class="seat-parent" data-price="100" data-id="53">
+                    <div class="seat standard-frame unavaliable-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="54">
+                    <div class="seat standard-frame unavaliable-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="55">
+                    <div class="seat standard-frame unavaliable-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="56">
+                    <div class="seat standard-frame unavaliable-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="57">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="58">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="59">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="60">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                </li>
+
+                <li class="right-seats d-flex gap-1 ms-3">
+                  <div class="seat-parent" data-price="100" data-id="61">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="62">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="63">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="64">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                </li>
+              </ul>
+
+              <ul
+                class="seats-row col-12 d-flex gap-1 align-items-center justify-content-between"
+              >
+                <li class="left-seats d-flex gap-1 me-3">
+                  <div class="seat-parent" data-price="100" data-id="65">
+                    <div class="seat standard-frame unavaliable-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="66">
+                    <div class="seat standard-frame unavaliable-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="67">
+                    <div class="seat standard-frame unavaliable-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="68">
+                    <div class="seat standard-frame unavaliable-frame"></div>
+                  </div>
+                </li>
+
+                <li class="middle-seats d-flex gap-1">
+                  <div class="seat-parent" data-price="100" data-id="69">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="70">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="71">
+                    <div class="seat standard-frame unavaliable-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="72">
+                    <div class="seat standard-frame unavaliable-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="73">
+                    <div class="seat standard-frame unavaliable-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="74">
+                    <div class="seat standard-frame unavaliable-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="75">
+                    <div class="seat standard-frame unavaliable-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="76">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                </li>
+
+                <li class="right-seats d-flex gap-1 ms-3">
+                  <div class="seat-parent" data-price="100" data-id="77">
+                    <div class="seat standard-frame unavaliable-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="78">
+                    <div class="seat standard-frame unavaliable-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="79">
+                    <div class="seat standard-frame unavaliable-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="80">
+                    <div class="seat standard-frame unavaliable-frame"></div>
+                  </div>
+                </li>
+              </ul>
+
+              <ul
+                class="seats-row col-12 d-flex gap-1 align-items-center justify-content-between"
+              >
+                <li class="left-seats d-flex gap-1 me-3">
+                  <div class="seat-parent" data-price="100" data-id="81">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="82">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="83">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="84">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                </li>
+
+                <li class="middle-seats d-flex gap-1">
+                  <div class="seat-parent" data-price="100" data-id="85">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="86">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="87">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="88">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="89">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="90">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="91">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="92">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                </li>
+
+                <li class="right-seats d-flex gap-1 ms-3">
+                  <div class="seat-parent" data-price="100" data-id="93">
+                    <div class="seat standard-frame unavaliable-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="94">
+                    <div class="seat standard-frame unavaliable-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="95">
+                    <div class="seat standard-frame unavaliable-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="96">
+                    <div class="seat standard-frame unavaliable-frame"></div>
+                  </div>
+                </li>
+              </ul>
+
+              <ul
+                class="seats-row col-12 d-flex gap-1 align-items-center justify-content-between"
+              >
+                <li class="left-seats d-flex gap-1 me-3">
+                  <div class="seat-parent" data-price="100" data-id="97">
+                    <div class="seat standard-frame unavaliable-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="98">
+                    <div class="seat standard-frame unavaliable-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="99">
+                    <div class="seat standard-frame unavaliable-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="100">
+                    <div class="seat standard-frame unavaliable-frame"></div>
+                  </div>
+                </li>
+
+                <li class="middle-seats d-flex gap-1">
+                  <div class="seat-parent" data-price="100" data-id="101">
+                    <div class="seat standard-frame unavaliable-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="102">
+                    <div class="seat standard-frame unavaliable-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="103">
+                    <div class="seat standard-frame unavaliable-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="104">
+                    <div class="seat standard-frame unavaliable-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="105">
+                    <div class="seat standard-frame unavaliable-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="106">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="107">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="108">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                </li>
+
+                <li class="right-seats d-flex gap-1 ms-3">
+                  <div class="seat-parent" data-price="100" data-id="109">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="110">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="111">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="100" data-id="112">
+                    <div class="seat standard-frame"></div>
+                  </div>
+                </li>
+              </ul>
+
+              <ul
+                class="seats-row col-12 d-flex gap-1 align-items-center justify-content-between mt-4"
+              >
+                <li class="left-seats d-flex gap-1 me-3">
+                  <div class="seat-parent" data-price="150" data-id="113">
+                    <div class="seat premium-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="150" data-id="114">
+                    <div class="seat premium-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="150" data-id="115">
+                    <div class="seat premium-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="150" data-id="116">
+                    <div class="seat premium-frame"></div>
+                  </div>
+                </li>
+
+                <li class="middle-seats d-flex gap-1">
+                  <div class="seat-parent" data-price="150" data-id="117">
+                    <div class="seat premium-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="150" data-id="118">
+                    <div class="seat premium-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="150" data-id="119">
+                    <div class="seat premium-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="150" data-id="120">
+                    <div class="seat premium-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="150" data-id="121">
+                    <div class="seat premium-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="150" data-id="122">
+                    <div class="seat premium-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="150" data-id="123">
+                    <div class="seat premium-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="150" data-id="124">
+                    <div class="seat premium-frame"></div>
+                  </div>
+                </li>
+
+                <li class="right-seats d-flex gap-1 ms-3">
+                  <div class="seat-parent" data-price="150" data-id="125">
+                    <div class="seat premium-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="150" data-id="126">
+                    <div class="seat premium-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="150" data-id="127">
+                    <div class="seat premium-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="150" data-id="128">
+                    <div class="seat premium-frame"></div>
+                  </div>
+                </li>
+              </ul>
+
+              <ul
+                class="seats-row col-12 d-flex gap-1 align-items-center justify-content-between"
+              >
+                <li class="left-seats d-flex gap-1 me-3">
+                  <div class="seat-parent" data-price="150" data-id="129">
+                    <div class="seat premium-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="150" data-id="130">
+                    <div class="seat premium-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="150" data-id="131">
+                    <div class="seat premium-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="150" data-id="132">
+                    <div class="seat premium-frame"></div>
+                  </div>
+                </li>
+
+                <li class="middle-seats d-flex gap-1">
+                  <div class="seat-parent" data-price="150" data-id="133">
+                    <div class="seat premium-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="150" data-id="134">
+                    <div class="seat premium-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="150" data-id="135">
+                    <div class="seat premium-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="150" data-id="136">
+                    <div class="seat premium-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="150" data-id="137">
+                    <div class="seat premium-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="150" data-id="138">
+                    <div class="seat premium-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="150" data-id="139">
+                    <div class="seat premium-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="150" data-id="140">
+                    <div class="seat premium-frame"></div>
+                  </div>
+                </li>
+
+                <li class="right-seats d-flex gap-1 ms-3">
+                  <div class="seat-parent" data-price="150" data-id="141">
+                    <div class="seat premium-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="150" data-id="142">
+                    <div class="seat premium-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="150" data-id="143">
+                    <div class="seat premium-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="150" data-id="144">
+                    <div class="seat premium-frame"></div>
+                  </div>
+                </li>
+              </ul>
+
+              <ul
+                class="seats-row col-12 d-flex gap-1 align-items-center justify-content-between"
+              >
+                <li class="left-seats d-flex gap-1 me-3">
+                  <div class="seat-parent" data-price="150" data-id="145">
+                    <div class="seat premium-frame unavaliable-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="150" data-id="146">
+                    <div class="seat premium-frame unavaliable-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="150" data-id="147">
+                    <div class="seat premium-frame unavaliable-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="150" data-id="148">
+                    <div class="seat premium-frame unavaliable-frame"></div>
+                  </div>
+                </li>
+
+                <li class="middle-seats d-flex gap-1">
+                  <div class="seat-parent" data-price="150" data-id="149">
+                    <div class="seat premium-frame unavaliable-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="150" data-id="150">
+                    <div class="seat premium-frame unavaliable-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="150" data-id="151">
+                    <div class="seat premium-frame unavaliable-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="150" data-id="152">
+                    <div class="seat premium-frame unavaliable-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="150" data-id="153">
+                    <div class="seat premium-frame unavaliable-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="150" data-id="154">
+                    <div class="seat premium-frame unavaliable-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="150" data-id="155">
+                    <div class="seat premium-frame unavaliable-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="150" data-id="156">
+                    <div class="seat premium-frame unavaliable-frame"></div>
+                  </div>
+                </li>
+
+                <li class="right-seats d-flex gap-1 ms-3">
+                  <div class="seat-parent" data-price="150" data-id="157">
+                    <div class="seat premium-frame unavaliable-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="150" data-id="158">
+                    <div class="seat premium-frame unavaliable-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="150" data-id="159">
+                    <div class="seat premium-frame unavaliable-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="150" data-id="160">
+                    <div class="seat premium-frame unavaliable-frame"></div>
+                  </div>
+                </li>
+              </ul>
+
+              <ul
+                class="seats-row col-12 d-flex gap-1 align-items-center justify-content-between"
+              >
+                <li class="left-seats d-flex gap-1 me-3">
+                  <div class="seat-parent" data-price="150" data-id="161">
+                    <div class="seat premium-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="150" data-id="162">
+                    <div class="seat premium-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="150" data-id="163">
+                    <div class="seat premium-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="150" data-id="164">
+                    <div class="seat premium-frame"></div>
+                  </div>
+                </li>
+
+                <li class="middle-seats d-flex gap-1">
+                  <div class="seat-parent" data-price="150" data-id="165">
+                    <div class="seat premium-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="150" data-id="166">
+                    <div class="seat premium-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="150" data-id="167">
+                    <div class="seat premium-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="150" data-id="168">
+                    <div class="seat premium-frame unavaliable-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="150" data-id="169">
+                    <div class="seat premium-frame unavaliable-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="150" data-id="170">
+                    <div class="seat premium-frame unavaliable-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="150" data-id="171">
+                    <div class="seat premium-frame unavaliable-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="150" data-id="172">
+                    <div class="seat premium-frame unavaliable-frame"></div>
+                  </div>
+                </li>
+
+                <li class="right-seats d-flex gap-1 ms-3">
+                  <div class="seat-parent" data-price="150" data-id="173">
+                    <div class="seat premium-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="150" data-id="174">
+                    <div class="seat premium-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="150" data-id="175">
+                    <div class="seat premium-frame"></div>
+                  </div>
+                  <div class="seat-parent" data-price="150" data-id="176">
+                    <div class="seat premium-frame"></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="seating-key col-12 d-flex flex-wrap align-items-center justify-content-center gap-3 py-3 my-3"
+            >
+              <div class="key-col d-flex gap-2 align-items-center">
+                <div class="status-frame unavaliable-frame"></div>
+                <div class="status unavaliable text-white">Unavailable</div>
+              </div>
+              <div class="key-col d-flex gap-2 align-items-center">
+                <div class="status-frame your-seat-frame"></div>
+                <div class="status your-seat text-white">Your Seat</div>
+              </div>
+
+              <div class="key-col d-flex gap-2 align-items-center">
+                <div class="status-frame standard-frame"></div>
+                <div class="status standard text-white">Standard</div>
+              </div>
+
+              <div class="key-col d-flex gap-2 align-items-center">
+                <div class="status-frame premium-frame"></div>
+                <div class="status premium text-white">Premium</div>
+              </div>
+            </div>
+            <div class="selected-seats-wrapper row">
+              <div class="col-12">
+                <h5 class="text-white">Your Seleced Seats</h5>
+                <ul class="seat-identifier ps-0">
+                  <li class="selected-seats text-white">No seat selected</li>
+                </ul>
+                <button
+                  class="confirmSeatsBtn text-white btn btn-lg my-3 fs-6"
+                  type="submit"
+                >
+                  Confirm Seats
+                </button>
+                <a class="checkoutSeatsLink" href="">
+                  <button
+                    class="checkoutSeatsBtn text-white btn btn-lg my-3 fs-6"
+                    type="submit"
+                  >
+                    Checkout
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="order">
+        <div class="container py-5">
+          <div class="order-wrapper row">
+            <div id="offers">
+              <div
+                class="order-row py-2 mb-3 col-12 d-flex align-items-center gap-3"
+              >
+                <div class="icon">
+                  <img
+                    class="w-100 h-100"
+                    src="../assets/images/icons/icon-offers-256x256.png"
+                    alt=""
+                  />
+                </div>
+                <h2 class="fs-5">OFFERS</h2>
+              </div>
+            </div>
+            <div id="extras">
+              <div
+                class="order-row py-2 mb-3 col-12 d-flex align-items-center gap-3"
+              >
+                <div class="icon">
+                  <img
+                    class="w-100 h-100"
+                    src="../assets/images/icons/icon-extras-256x256.png"
+                    alt=""
+                  />
+                </div>
+                <h2 class="fs-5">FOOD & DRINKS</h2>
+              </div>
+            </div>
+            <div id="details">
+              <div
+                class="order-row py-2 mb-3 col-12 d-flex align-items-center gap-3"
+              >
+                <div class="icon">
+                  <img
+                    class="w-100 h-100"
+                    src="../assets/images/icons/icon-details-256x256.png"
+                    alt=""
+                  />
+                </div>
+                <h2 class="fs-5">YOUR DETAILS</h2>
+              </div>
+            </div>
+            <div id="payment">
+              <div
+                class="order-row py-2 mb-3 col-12 d-flex align-items-center gap-3"
+              >
+                <div class="icon">
+                  <img
+                    class="w-100 h-100"
+                    src="../assets/images/icons/icon-payment-256x256.png"
+                    alt=""
+                  />
+                </div>
+                <h2 class="fs-5">REVIEW & PAY</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <div class="container py-5">
+        <div class="footer-wrapper row">
+          <article
+            class="d-flex flex-column justify-content-start flex-sm-row justify-content-sm-between flex-md-column justify-content-md-start col-12 col-md-3 mb-4"
+          >
+            <a class="brand-vox" href="/" title="VOX Cinemas"
+              ><img
+                class="mb-4"
+                src="../assets/images/header/logo-288x92.png"
+                alt=""
+            /></a>
+            <div
+              class="follow-us d-flex flex-column flex-sm-row flex-md-column align-items-start align-items-sm-center align-items-md-start gap-2"
+            >
+              <h5>STAY IN TOUCH</h5>
+              <ul
+                class="icons-links ps-0 mb-0 d-flex flex-wrap align-items-center gap-1 fs-3"
+              >
+                <li class="mb-2">
+                  <a
+                    class="d-flex align-items-center justify-content-center rounded-circle"
+                    href=""
+                    ><i class="fa-brands fa-facebook-f text-white"></i
+                  ></a>
+                </li>
+                <li class="mb-2">
+                  <a
+                    class="d-flex align-items-center justify-content-center rounded-circle"
+                    href=""
+                    ><i class="fa-brands fa-twitter text-white"></i
+                  ></a>
+                </li>
+                <li class="mb-2">
+                  <a
+                    class="d-flex align-items-center justify-content-center rounded-circle"
+                    href=""
+                    ><i class="fa-brands fa-instagram text-white"></i
+                  ></a>
+                </li>
+                <li class="mb-2">
+                  <a
+                    class="d-flex align-items-center justify-content-center rounded-circle"
+                    href=""
+                    ><i class="fa-brands fa-youtube text-white"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <div class="col-3 d-none d-md-block">
+            <h5>About</h5>
+            <nav>
+              <ul class="ps-0">
+                <li class="mb-2"><a href="">About Us</a></li>
+                <li class="mb-2"><a href="">FAQ</a></li>
+                <li class="mb-2"><a href="">Contact Us</a></li>
+                <li class="mb-2"><a href="">Careers</a></li>
+                <li class="mb-2"><a href="">Vox Cinemas App</a></li>
+                <li class="mb-2">
+                  <a href="">Responsible Disclosure Policy</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="col-3 d-none d-md-block">
+            <h5>Help & Support</h5>
+            <nav>
+              <ul class="ps-0">
+                <li class="mb-2"><a href="">Refunds</a></li>
+                <li class="mb-2"><a href="">Privacy Policy</a></li>
+                <li class="mb-2"><a href="">Terms And Conditions</a></li>
+                <li class="mb-2"><a href="">Terms of Use</a></li>
+                <li class="mb-2"><a href="">Health & Safety</a></li>
+                <li class="mb-2"><a href="">Cookie Settings</a></li>
+                <li class="mb-2"><a href="">Privacy Center</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="col-3 d-none d-md-block">
+            <h5>Explore Our Site</h5>
+            <nav>
+              <ul class="ps-0">
+                <li class="mb-2"><a href="">What's On</a></li>
+                <li class="mb-2"><a href="">Coming Soon</a></li>
+                <li class="mb-2"><a href="">Food Menus</a></li>
+                <li class="mb-2"><a href="">Pre-Order Online</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="accordion d-block d-md-none" id="accordionExample">
+            <div class="accordion-item border border-0 bg-transparent">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button bg-transparent"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  About
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <ul class="ps-0">
+                    <li class="mb-2"><a href="">About Us</a></li>
+                    <li class="mb-2"><a href="">FAQ</a></li>
+                    <li class="mb-2"><a href="">Contact Us</a></li>
+                    <li class="mb-2"><a href="">Careers</a></li>
+                    <li class="mb-2"><a href="">Vox Cinemas App</a></li>
+                    <li class="mb-2">
+                      <a href="">Responsible Disclosure Policy</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item border border-0 bg-transparent">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed bg-transparent"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Help & Support
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <ul class="ps-0">
+                    <li class="mb-2"><a href="">Refunds</a></li>
+                    <li class="mb-2"><a href="">Privacy Policy</a></li>
+                    <li class="mb-2"><a href="">Terms And Conditions</a></li>
+                    <li class="mb-2"><a href="">Terms of Use</a></li>
+                    <li class="mb-2"><a href="">Health & Safety</a></li>
+                    <li class="mb-2"><a href="">Cookie Settings</a></li>
+                    <li class="mb-2"><a href="">Privacy Center</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item border border-0 bg-transparent">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed bg-transparent"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Explore Our Site
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <ul class="ps-0">
+                    <li class="mb-2"><a href="">What's On</a></li>
+                    <li class="mb-2"><a href="">Coming Soon</a></li>
+                    <li class="mb-2"><a href="">Food Menus</a></li>
+                    <li class="mb-2"><a href="">Pre-Order Online</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../assets/libraries/bootstap/bootstrap.js"></script>
+    <script src="../assets/scripts/global.js" type="module"></script>
+    <script src="../assets/scripts/search.js" type="module"></script>
+    <script src="../assets/scripts/cinema.js" type="module"></script>
+  </body>
+</html>

@@ -1,7 +1,15 @@
-const posterMovie = document.querySelector(".poster-wall .poster-movie");
-console.log(posterMovie);
-const url = posterMovie.href;
-console.log(url)
+let movieObj = {
+    date: "16/11/1995",
+    movies: []
+};
+console.log(movieObj)
+movieObj.movies.push("maysara");
+movieObj.movies.push("marwan");
+console.log(movieObj)
 
-const searchParams = new URLSearchParams(url);
-console.log(searchParams)
+if (movieObj.date == "16/11/1996") {
+    console.log(movieObj)
+} else if (movieObj.date == "16/11/1995") {
+    console.log("found")
+    console.log(movieObj.movies)
+}

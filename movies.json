@@ -263,6 +263,393 @@
             "image": "../assets/images/movies/head space.jpg",
             "trailer": "https://www.youtube.com/embed/9BBjpy8YIN4?si=Qbav6j3dGNXVNGm-?rel=0&amp;amp;showinfo=0&amp;amp;hd=1&amp;amp;enablejsapi=1"
         }
+    ],
+    "menu":[
+        {
+            "id" : 1,
+            "name": "Aquafina",
+            "image":"../assets/images/menu/aquafina.jpg",
+            "type": "SOFT DRINKS",
+            "price": 15.00
+        },
+        {
+            "id" : 2,
+            "name": "Redbull regular",
+            "image":"../assets/images/menu/redbull.jpg",
+            "type": "SOFT DRINKS",
+            "price": 55.00
+        },
+        {
+            "id" : 3,
+            "name": "Pepsi",
+            "image":" ../assets/images/menu/pepsi.jpg",
+            "type": "SOFT DRINKS",
+            "price": 40.00
+        },
+        {
+            "id" : 4,
+            "name": "Fruit Slush EGT",
+            "image":"../assets/images/menu/fruit slush egt.jpg",
+            "type": "SOFT DRINKS",
+            "price": 55.00
+        },
+        {
+            "id" : 5,
+            "name": "Redbull Sugar free",
+            "image":"../assets/images/menu/redbull sugar free.jpg",
+            "type": "SOFT DRINKS",
+            "price": 55.00
+        },
+        {
+            "id" : 6,
+            "name": "Regular Mirina",
+            "image":"../assets/images/menu/small mirinda.jpg",
+            "type": "SOFT DRINKS",
+            "price": 40.00
+        },
+        {
+            "id" : 7,
+            "name": "Large Mixed Popcorn",
+            "image":"../assets/images/menu/large mixed popcorn.png",
+            "type": "POPCORN",
+            "price": 95.00
+        },
+        {
+            "id" : 8,
+            "name": "Regular Crunchy Cheetos Popcorn EGT",
+            "image":"../assets/images/menu/regular crunchy cheetos popcorn.jpg",
+            "type": "POPCORN",
+            "price": 85.00
+        },
+        {
+            "id" : 9,
+            "name": "Regular Mixed Popcorn",
+            "image":"../assets/images/menu/regular mixed popcorn.png",
+            "type": "POPCORN",
+            "price": 85.00
+        },
+        {
+            "id" : 10,
+            "name": "Large Crunchy Cheetos Popcorn EGT",
+            "image":"../assets/images/menu/LARGE CRUNCHY CHEETOS POPCORN EGT.jpg",
+            "type": "POPCORN",
+            "price": 95.00
+        },
+        {
+            "id" : 11,
+            "name": "Regular Salt Popcorn",
+            "image":"../assets/images/menu/regular salt popcorn.png",
+            "type": "POPCORN",
+            "price": 70.00
+        },
+        {
+            "id" : 12,
+            "name": "Large Salt Popcorn",
+            "image":"../assets/images/menu/large salt popcorn.png",
+            "type": "POPCORN",
+            "price": 80.00
+        },
+        {
+            "id" : 13,
+            "name": "Regular Caramel Popcorn",
+            "image":"../assets/images/menu/regular caramel popcorn.png",
+            "type": "POPCORN",
+            "price": 85.00
+        },
+        {
+            "id" : 14,
+            "name": "Small Crunchy Cheetos Popcorn EGT",
+            "image":"../assets/images/menu/small crunchy cheetos popcorn egt.jpg",
+            "type": "POPCORN",
+            "price": 75.00
+        },
+        {
+            "id" : 15,
+            "name": "Large Caramel Popcorn",
+            "image":"../assets/images/menu/large caramel popcorn.png",
+            "type": "POPCORN",
+            "price": 95.00
+        },
+        {
+            "id" : 16,
+            "name": "Small Mixed Popcorn",
+            "image":"../assets/images/menu/smal mixed popcorn.png",
+            "type": "POPCORN",
+            "price": 75.00
+        },
+        {
+            "id" : 17,
+            "name": "Small Caramel Popcorn",
+            "image":"../assets/images/menu/small caramel popcorn.png",
+            "type": "POPCORN",
+            "price": 75.00
+        },
+        {
+            "id" : 18,
+            "name": "Small Salt Popcorn",
+            "image":"../assets/images/menu/small salt popcorn.png",
+            "type": "POPCORN",
+            "price": 60.00
+        },
+        {
+            "id" : 19,
+            "name": "Reggular Cheese Popcorn",
+            "image":"../assets/images/menu/regular cheese popcorn.png",
+            "type": "POPCORN",
+            "price": 80.00
+        },
+        {
+            "id" : 20,
+            "name": "Large Cheese Popcorn",
+            "image":"../assets/images/menu/large cheese popcorn.png",
+            "type": "POPCORN",
+            "price": 90.00
+        },
+        {
+            "id" : 21,
+            "name": "Nachos Supreme",
+            "image":"../assets/images/menu/nachos supreme.jpg",
+            "type": "NACHOS",
+            "price": 115.00
+        },
+        {
+            "id" : 22,
+            "name": "Nachos Deluxe",
+            "image":"../assets/images/menu/nachos supreme.jpg",
+            "type": "NACHOS",
+            "price": 135.00
+        },
+        {
+            "id" : 23,
+            "name": "Nachos Jalapino",
+            "image":"../assets/images/menu/nachos deluxe.jpg",
+            "type": "NACHOS",
+            "price": 135.00
+        },
+        {
+            "id" : 24,
+            "name": "Snack Box",
+            "image":"../assets/images/menu/snack box.png",
+            "type": "NACHOS",
+            "price": 150.00
+        },
+        {
+            "id" : 25,
+            "name": "Extra Rico Gourmet Cheese",
+            "image":"../assets/images/menu/extra rico gurmet cheese.jpg",
+            "type": "NACHOS",
+            "price": 35.00
+        },
+        {
+            "id" : 26,
+            "name": "Extra Rico Chunky Salsa",
+            "image":"../assets/images/menu/extra rico rico salsa.jpg",
+            "type": "NACHOS",
+            "price": 30.00
+        },
+        {
+            "id" : 27,
+            "name": "Add Extra Jalapeno",
+            "image":"../assets/images/menu/add extra jallopeno.jpg",
+            "type": "NACHOS",
+            "price": 25.00
+        },
+        {
+            "id" : 28,
+            "name": "Add Extra Nachos Chips",
+            "image":"../assets/images/menu/add extra nachos chips.jpg",
+            "type": "NACHOS",
+            "price": 20.00
+        },
+        {
+            "id" : 29,
+            "name": "Bounty bar",
+            "image":"../assets/images/menu/bounty bar.jpg",
+            "type": "SWEETS",
+            "price": 45.00
+        },
+        {
+            "id" : 30,
+            "name": "Galaxy bar",
+            "image":"../assets/images/menu/galaxy bar.jpg",
+            "type": "SWEETS",
+            "price": 30.00
+        },
+        {
+            "id" : 31,
+            "name": "Twix bar",
+            "image":"../assets/images/menu/twix bar.jpg",
+            "type": "SWEETS",
+            "price": 20.00
+        },
+        {
+            "id" : 32,
+            "name": "M&M Chocolate Small",
+            "image":"../assets/images/menu/m&m chocolate small.jpg",
+            "type": "SWEETS",
+            "price": 40.00
+        },
+        {
+            "id" :33,
+            "name": "Snickers bar",
+            "image":"../assets/images/menu/snikkers bar.jpg",
+            "type": "SWEETS",
+            "price": 20.00
+        },
+        {
+            "id" :34,
+            "name": "M&M Peanut Small",
+            "image":"../assets/images/menu/m&m peanut small.jpg",
+            "type": "SWEETS",
+            "price": 40.00
+        },
+        {
+            "id" :35,
+            "name": "Maltesers Small",
+            "image":"../assets/images/menu/maltesers small.jpg",
+            "type": "SWEETS",
+            "price": 40.00
+        },
+        {
+            "id" :36,
+            "name": "Mars bar",
+            "image":"../assets/images/menu/mars bar.jpg",
+            "type": "SWEETS",
+            "price": 40.00
+        },
+        {
+            "id" :37,
+            "name": "M&M Peanut Large",
+            "image":"../assets/images/menu/m&m peanut large.jpg",
+            "type": "SWEETS",
+            "price": 80.00
+        },
+        {
+            "id" :38,
+            "name": "M&M Chocolate Large",
+            "image":"../assets/images/menu/m&m chocolate large.jpg",
+            "type": "SWEETS",
+            "price": 80.00
+        },
+        {
+            "id" :39,
+            "name": "Cheesy Cheetos Beef Hotdog",
+            "image":"../assets/images/menu/cheese cheetos beef hotdog.png",
+            "type": "HOT FOOD",
+            "price": 85.00
+        },
+        {
+            "id" :40,
+            "name": "Beef Hotdog EGT",
+            "image":"../assets/images/menu/beef hotdog extra cheese.png",
+            "type": "HOT FOOD",
+            "price": 80.00
+        },
+        {
+            "id" :41,
+            "name": "Chicken Tenders BBQ Sauce",
+            "image":"../assets/images/menu/chicken tenders bbq sause.png",
+            "type": "HOT FOOD",
+            "price": 120.00
+        },
+        {
+            "id" :42,
+            "name": "CB Classic Chicken Burger",
+            "image":"../assets/images/menu/cb classic chicken burger.png",
+            "type": "HOT FOOD",
+            "price": 95.00
+        },
+        {
+            "id" :43,
+            "name": "Mango Juice",
+            "image":"../assets/images/menu/mango juice.jpg",
+            "type": "JUICE",
+            "price": 60.00
+        },
+        {
+            "id" :43,
+            "name": "Milkshake Strawberry EGT",
+            "image":"../assets/images/menu/milk shake strawbery egt.jpg",
+            "type": "JUICE",
+            "price": 70.00
+        },
+        {
+            "id" :44,
+            "name": "Milkshake Vanilla EGT",
+            "image":"../assets/images/menu/milk shake vanilla egt.jpg",
+            "type": "JUICE",
+            "price": 70.00
+        },
+        {
+            "id" :45,
+            "name": "Orange Juice",
+            "image":"../assets/images/menu/orange juice.jpg",
+            "type": "JUICE",
+            "price": 55.00
+        },
+        {
+            "id" :46,
+            "name": "Milkshake Chocolate EGT",
+            "image":"../assets/images/menu/milk shake chocolate egt.jpg",
+            "type": "JUICE",
+            "price": 70.00
+        },
+        {
+            "id" :47,
+            "name": "Guava Juice",
+            "image": "../assets/images/menu/guava juice.jpg",
+            "type": "JUICE",
+            "price": 55.00
+        },
+        {
+            "id" :48,
+            "name": "Cappuccino",
+            "image": "../assets/images/menu/cappucino.jpg",
+            "type": "HOT DRINK",
+            "price": 55.00
+        },
+        {
+            "id" :49,
+            "name": "Latte",
+            "image": "../assets/images/menu/latte.jpg",
+            "type": "HOT DRINK",
+            "price": 50.00
+        },
+        {
+            "id" :50,
+            "name": "Hot Tea EGT",
+            "image": "../assets/images/menu/hot tea egt.jpg",
+            "type": "HOT DRINK",
+            "price": 25.00
+        },
+        {
+            "id" :51,
+            "name": "Americano",
+            "image": "../assets/images/menu/americano.jpg",
+            "type": "HOT DRINK",
+            "price": 40.00
+        },
+        {
+            "id" :52,
+            "name": "Single Espresso",
+            "image": "../assets/images/menu/single exspresso.jpg",
+            "type": "HOT DRINK",
+            "price": 30.00
+        },
+        {
+            "id" :53,
+            "name": "Hot Chocolate",
+            "image": "../assets/images/menu/hot chocolate.jpg",
+            "type": "HOT DRINK",
+            "price": 50.00
+        },
+        {
+            "id" :54,
+            "name": "Double Espresso",
+            "image": "../assets/images/menu/double espresso.jpg",
+            "type": "HOT DRINK",
+            "price": 40.00
+        }
     ]
 }
 

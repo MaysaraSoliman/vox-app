@@ -1,7 +1,8 @@
-const headerSearchIcon = document.querySelectorAll("#header .search-icon");
-const searchFormBar = document.querySelector("#header .search-bar");
-const searchInput = document.querySelector("#header .search-input");
-const emptyIcon = document.querySelector("#header .empty-icon");
+const headerSearchIcon = document.querySelectorAll(".search-icon");
+const searchFormBar = document.querySelector("#searchSide .search-bar");
+const searchInput = document.querySelector("#searchSide .search-input");
+const emptyIcon = document.querySelector("#searchSide .empty-icon");
+const searchSide = document.querySelector("#searchSide");
 
 
 function addEventsHeader() {
@@ -9,6 +10,7 @@ function addEventsHeader() {
         searchIcon.addEventListener("click", () => {
             removeHiddenClass(searchFormBar);
             focusOnInput(searchInput);
+            searchSide.classList.toggle("active-transition");
         })
     })
 
@@ -21,6 +23,16 @@ function removeHiddenClass(aClass) {
     aClass.classList.toggle("hidden");
 }
 
+function addActiveClass(aClass) {
+    aClass.classList.add("active");
+}
+
+function removeActiveClass(list) {
+    list.forEach((el) => {
+        el.classList.remove("active");
+    })
+}
+
 function focusOnInput(aInput) {
     aInput.focus();
 }
@@ -28,3 +40,5 @@ function focusOnInput(aInput) {
 function emptyingInput(aInput) {
     aInput.value = "";
 }
+
+export { addActiveClass, removeActiveClass }

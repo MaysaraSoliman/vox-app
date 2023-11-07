@@ -16,3 +16,19 @@
 }
 
 /* End Hero Section */
+
+/* Start Highlight Section */
+
+
+/* media Query */
+@media(max-width: 576px) {
+    #highlight .poster-main {
+        max-height: 440px !important;
+    }
+
+    #highlight .poster-main img {
+        height: 100%;
+    }
+}
+
+/* End Highlight Section */

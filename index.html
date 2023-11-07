@@ -14,21 +14,22 @@
     <!-- Main File Of Css -->
     <link rel="stylesheet" href="./assets/css/home.css" />
     <link rel="stylesheet" href="./assets/css/global.css" />
+    <link rel="stylesheet" href="./assets/css/search.css" />
   </head>
   <body>
     <header id="header">
       <div class="container z-3 pb-2">
-        <form class="search-bar d-flex p-2 gap-1 hidden">
+        <!--  <form class="search-bar d-flex p-2 gap-1 hidden">
           <i class="fa-solid fa-magnifying-glass fs-4"></i>
           <input class="search-input border-0 w-100" type="text" />
           <i class="empty-icon fa-solid fa-xmark fs-4 text-secondary"></i>
-          <!-- <button
+          <button
             class="search-submit border-0 rounded btn-md text-white"
             type="submit"
           >
             Search
-          </button> -->
-        </form>
+          </button> 
+        </form> -->
 
         <nav class="navbar navbar-expand-lg navbar-light">
           <div class="container-fluid flex-row-reverse flex-lg-row">
@@ -113,7 +114,11 @@
                     aria-labelledby="navbarDropdown"
                   >
                     <li>
-                      <a class="dropdown-item" href="#">Pre-order online</a>
+                      <a
+                        class="dropdown-item"
+                        href="../foodsanddrinks/order.html"
+                        >Pre-order online</a
+                      >
                     </li>
                     <li>
                       <a class="dropdown-item" href="#">Vox Exclusives</a>
@@ -176,6 +181,38 @@
       </div>
     </header>
     <main>
+      <section id="searchSide" class="w-50">
+        <div class="bg-light">
+          <div class="container p-2">
+            <form class="search-bar d-flex p-2 gap-2 hidden">
+              <i class="fa-solid fa-magnifying-glass fs-4"></i>
+              <input class="search-input border-0 w-100" type="text" />
+              <i class="empty-icon fa-solid fa-xmark fs-4 text-secondary"></i>
+              <button
+                class="search-submit border-0 rounded btn-md text-white"
+                type="submit"
+              >
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="search-wrapper-results container p-2">
+          <!-- <a href="" class="d-flex gap-2">
+            <div class="image">
+              <img
+                class="w-100"
+                src="../assets/images/movies/Voy Voy.jpg"
+                alt=""
+              />
+            </div>
+            <div class="movie-info">
+              <p class="movie-name">Maysar Mohamed</p>
+              <span>(Arabic)</span>
+            </div>
+          </a> -->
+        </div>
+      </section>
       <section id="hero">
         <div id="carouselExampleFade" class="carousel slide carousel-fade">
           <div class="carousel-inner d-flex">
@@ -256,7 +293,7 @@
           </div>
           <div class="container">
             <div class="poster-wall row">
-              <div class="col-12 col-sm-6 p-0">
+              <div class="poster-main col-12 col-sm-6 p-0">
                 <a
                   class="poster-movie"
                   href="http://127.0.0.1:5500/singlemovie/singlemovie.html?id=11"
@@ -369,7 +406,7 @@
             <div class="py-2 col-6 col-sm-4">
               <img
                 class="w-100"
-                src="./assets/images/vox experience/panel-imx-300x150.jpg"
+                src="./assets/images/vox experience/panel-fx-300x150.jpg"
                 alt=""
               />
             </div>
@@ -598,6 +635,7 @@
     </main>
     <script src="./assets/libraries/bootstap/bootstrap.js"></script>
     <script src="./assets/scripts/global.js" type="module"></script>
+    <script src="./assets/scripts/search.js" type="module"></script>
     <script src="./assets/scripts/home.js" type="module"></script>
   </body>
 </html>
